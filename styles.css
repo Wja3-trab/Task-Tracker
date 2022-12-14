@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/matrix');
+:root {
+    /*Color variables*/
+    --green: #12d412;
+    --dk-green: #088708;
+    --red: #741010;
+    --light-red: #c95555;
+    --blue: #5c42dc;
+    --light-blue: #b4b4f8;
+    /*Background-color variables*/
+    --black: #010d01;
+}
+
+::placeholder {
+    color: var(--green);
+    opacity: 1; /*Firefox uses lower opacity so this fixes it*/
+}
+
+/*For ME-browser support*/
+::-ms-input-placeholder {
+    color: var(--green);
+}
+
+/*For IE-browser support for whoever still uses it*/
+:-ms-input-placeholder {
+    color: var(--green);
+}
+
+* {
+    font-family: "Matrix",'Courier New', Courier, monospace, sans-serif;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.title {
+    text-align: center;
+    color: var(--green);
+    height: 50px;
+    font-size:45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 50px auto;
+    width: 80%;
+    height: 5px;
+    background-color: var(--green);
+    border-top-left-radius: 90%;
+    border-bottom-left-radius: 90%;
+    border-top-right-radius: 90%;
+    border-bottom-right-radius: 90%;
+}
+
+.container > div {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.inputs {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#taskIn {
+    width: 80%;
+    height: 58px;
+    background-color: var(--black);
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 20px;
+    padding: 0;
+    padding-left: 5px;
+}
+
+#inputBtn {
+    width: 15%;
+    height: 60px;
+    background-color: var(--black);
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 20px;
+}
+
+#taskIn:focus {
+    outline: none !important;
+    border: 1px solid var(--dk-green);
+}
+
+#inputBtn:hover {
+    border: 1px solid var(--dk-green);
+}
+
+.taskList {
+    width: 80%;
+    margin: auto;
+}
+
+.tasks {
+    list-style: none;
+    width: 80.5%;
+    height: auto;
+    color: var(--green);
+    margin: 30px auto auto auto;
+    padding: 0;
+}
+
+li {
+    height: 30px;
+    width: 100%;
+    list-style: none;
+    border: 1px solid var(--green);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+li:hover {
+    border: 1px solid var(--dk-green);
+}
+
+li > button {
+    float: right;
+    border-radius: 20px;
+    background-color: var(--black);
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.delBtn {
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.editBtn {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    margin-right: 5px;
+}
+
+.delBtn:hover {
+    background-color: var(--light-red);
+}
+
+.editBtn:hover {
+    background-color: var(--light-blue);
+}
