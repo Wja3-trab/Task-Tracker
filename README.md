@@ -1,4 +1,4 @@
-# V0.1 Task-Tracker
+# V0.1 Task Tracker
 This is my first attempt at making a to-do list
 Currently there is no back-end. So nothing gets stored.
 
@@ -20,3 +20,9 @@ So, I had to do a bit of research and found out that childNodes was what I was l
 A neet workaround indeed.
 
 In the foreseeing future I am planning on adding an order button so that users can order their tasks according to priority.
+
+
+#V0.2 Task Tracker
+Sooner than I anticipated. I made a couple of changes where users are able to properly order their task according to priority level.
+Give it a try. In the future I would like to add some functionality where the user can save their list. Now that is quite a challenge.
+The thought of it excites me. The code currently is not optimal but it does it job.
