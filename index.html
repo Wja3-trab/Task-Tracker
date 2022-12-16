@@ -12,8 +12,16 @@
     <main>
         <div class="title">My Task Tracker</div>
         <div class="border"></div>
+        <div class="inputs">
+            <div class="priorities">
+                <label class="priority" for="priority">Priority:</label>
+                <select name="priorityLvl" id="pLvl">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
         <div class="container">
-            <div class="inputs">
                 <input id="taskIn" type="text" placeholder="Enter Task...">
                 <button id="inputBtn" type="submit">Enter</button>
             </div>
